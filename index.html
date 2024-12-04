@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Around Us Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            position: relative; /* Allows absolute positioning of logos */
+        }
+
+        /* Top Left Logo */
+        .logo-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px; /* Adjust size of the logo */
+            z-index: 10; /* Make sure it's above other elements */
+        }
+
+        /* Top Right Logo */
+        .logo-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px; /* Adjust size of the logo */
+            z-index: 10; /* Make sure it's above other elements */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #2e7d32; /* Green tone */
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1; /* Keep hero section under the logos */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%; /* Makes images fill their container */
+            height: 300px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Ensures the image fits well without stretching */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image on hover */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2e7d32; /* Green tone */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo in Top Left Corner -->
+    <img src="photos/logo1.jpg" alt="Logo 1" class="logo-left">
+
+    <!-- Logo in Top Right Corner -->
+    <img src="photos/logo2.jpg" alt="Logo 2" class="logo-right">
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Not Around Us Photo Gallery</h1>
+        <p>Celebrating a smoke-free and vape-free environment with our community!</p>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+        <!-- Insert your images here -->
+        <img src="photos/photo1.jpg" alt="Description of photo 1">
+        <img src="photos/photo2.jpg" alt="Description of photo 2">
+        <img src="photos/photo3.jpg" alt="Description of photo 3">
+        <img src="photos/photo4.jpg" alt="Description of photo 4">
+        <img src="photos/photo5.jpg" alt="Description of photo 5">
+        <img src="photos/photo6.jpg" alt="Description of photo 6">
+        <img src="photos/photo7.jpg" alt="Description of photo 7">
+        <img src="photos/photo8.jpg" alt="Description of photo 8">
+        <img src="photos/photo9.jpg" alt="Description of photo 9">
+        <img src="photos/photo10.jpg" alt="Description of photo 10">
+        <img src="photos/photo11.jpg" alt="Description of photo 11">
+        <img src="photos/photo12.jpg" alt="Description of photo 12">
+        <img src="photos/photo13.jpg" alt="Description of photo 13">
+        <img src="photos/photo14.jpg" alt="Description of photo 14">
+        <img src="photos/photo15.jpg" alt="Description of photo 15">
+        <img src="photos/photo16.jpg" alt="Description of photo 16">
+        <img src="photos/photo17.jpg" alt="Description of photo 17">
+        <img src="photos/photo18.jpg" alt="Description of photo 18">
+        <img src="photos/photo19.jpg" alt="Description of photo 19">
+        <img src="photos/photo20.jpg" alt="Description of photo 20">
+        <img src="photos/photo21.jpg" alt="Description of photo 21">
+        <img src="photos/photo22.jpg" alt="Description of photo 22">
+        <img src="photos/photo23.jpg" alt="Description of photo 23">
+        <img src="photos/photo24.jpg" alt="Description of photo 24">
+        <img src="photos/photo25.jpg" alt="Description of photo 25">
+        <img src="photos/photo26.jpg" alt="Description of photo 26">
+        <img src="photos/photo27.jpg" alt="Description of photo 27">
+        <img src="photos/photo28.jpg" alt="Description of photo 28">
+        <img src="photos/photo29.jpg" alt="Description of photo 29">
+        <img src="photos/photo30.jpg" alt="Description of photo 30">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Not Around Us Campaign | Promoting Healthier Communities</p>
+    </footer>
+</body>
+</html>

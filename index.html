@@ -91,6 +91,33 @@
             .hero p {
                 font-size: 1rem;
             }
+
+            /* Adjust logo sizes and position on mobile */
+            .logo-left, .logo-right {
+                width: 60px; /* Make logos smaller on mobile */
+                top: 10px; /* Reduce space from the top */
+                left: 10px; /* Adjust left logo */
+                right: 10px; /* Adjust right logo */
+            }
+        }
+
+        /* Even smaller screens */
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 10px; /* Reduce padding for small screens */
+            }
+
+            .hero h1 {
+                font-size: 2rem; /* Smaller font for smaller screens */
+            }
+
+            .hero p {
+                font-size: 0.9rem; /* Adjust paragraph font size */
+            }
+
+            .logo-left, .logo-right {
+                width: 50px; /* Even smaller logos on very small screens */
+            }
         }
     </style>
 </head>
@@ -145,6 +172,10 @@
     <!-- Footer -->
     <footer>
         <p>© 2024 Not Around Us Campaign | Promoting Healthier Communities</p>
+    </footer>
+</body>
+</html>
+
     </footer>
 </body>
 </html>

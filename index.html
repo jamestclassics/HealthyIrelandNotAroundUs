@@ -10,25 +10,25 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
-            position: relative; /* Allows absolute positioning of logos */
+            position: relative;
         }
 
         /* Top Left Logo */
         .logo-left {
             position: absolute;
-            top: 20px;
+            top: 10px;
             left: 20px;
-            width: 100px; /* Adjust size of the logo */
-            z-index: 10; /* Make sure it's above other elements */
+            width: 80px; /* Adjust size of the logo */
+            z-index: 10;
         }
 
         /* Top Right Logo */
         .logo-right {
             position: absolute;
-            top: 20px;
+            top: 10px;
             right: 20px;
-            width: 100px; /* Adjust size of the logo */
-            z-index: 10; /* Make sure it's above other elements */
+            width: 80px; /* Adjust size of the logo */
+            z-index: 10;
         }
 
         /* Hero Section */
@@ -36,14 +36,15 @@
             background-color: #2e7d32; /* Green tone */
             color: #ffffff;
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px; /* Increase top padding to create space */
             position: relative;
-            z-index: 1; /* Keep hero section under the logos */
+            z-index: 1;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 0;
+            line-height: 1.2;
         }
 
         .hero p {
@@ -54,23 +55,23 @@
         /* Gallery Section */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin: 20px;
             padding: 20px;
         }
 
         .gallery img {
-            width: 100%; /* Makes images fill their container */
-            height: 300px; /* Set a fixed height for uniformity */
-            object-fit: cover; /* Ensures the image fits well without stretching */
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
         }
 
         .gallery img:hover {
-            transform: scale(1.05); /* Slightly enlarges the image on hover */
+            transform: scale(1.05);
         }
 
         /* Footer Section */
@@ -85,7 +86,7 @@
         /* Responsive Styling */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .hero p {
@@ -94,29 +95,31 @@
 
             /* Adjust logo sizes and position on mobile */
             .logo-left, .logo-right {
-                width: 60px; /* Make logos smaller on mobile */
-                top: 10px; /* Reduce space from the top */
-                left: 10px; /* Adjust left logo */
-                right: 10px; /* Adjust right logo */
+                width: 60px; /* Smaller logos */
+                top: 20px;
+            }
+
+            .hero {
+                padding: 60px 20px; /* Adjust padding */
             }
         }
 
         /* Even smaller screens */
         @media (max-width: 480px) {
             .hero {
-                padding: 40px 10px; /* Reduce padding for small screens */
+                padding: 50px 10px;
             }
 
             .hero h1 {
-                font-size: 2rem; /* Smaller font for smaller screens */
+                font-size: 1.8rem;
             }
 
             .hero p {
-                font-size: 0.9rem; /* Adjust paragraph font size */
+                font-size: 1rem;
             }
 
             .logo-left, .logo-right {
-                width: 50px; /* Even smaller logos on very small screens */
+                width: 50px;
             }
         }
     </style>
@@ -130,8 +133,8 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Not Around Us Photo Gallery</h1>
-        <p>Celebrating a smoke-free and vape-free environment with our community!</p>
+        <h1>Not Around Us</h1>
+        <p>Photo Gallery</p>
     </div>
 
     <!-- Photo Gallery -->
@@ -161,7 +164,7 @@
         <img src="photos/photo22.jpg" alt="Description of photo 22">
         <img src="photos/photo23.jpg" alt="Description of photo 23">
         <img src="photos/photo24.jpg" alt="Description of photo 24">
-        <img src="photos/photo25.JPG" alt="Description of photo 25">
+        <img src="photos/photo25.jpg" alt="Description of photo 25">
         <img src="photos/photo26.jpg" alt="Description of photo 26">
         <img src="photos/photo27.jpg" alt="Description of photo 27">
         <img src="photos/photo28.jpg" alt="Description of photo 28">
@@ -172,10 +175,6 @@
     <!-- Footer -->
     <footer>
         <p>© 2024 Not Around Us Campaign | Promoting Healthier Communities</p>
-    </footer>
-</body>
-</html>
-
     </footer>
 </body>
 </html>
